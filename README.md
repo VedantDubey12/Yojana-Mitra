@@ -5,8 +5,6 @@ An AI-powered website that helps Indian citizens find central government schemes
 **Live website:** https://yojanamitra-three.vercel.app/
 **GitHub repository:** https://github.com/VedantDubey12/Yojana-Mitra/tree/main
 
-> This is a student project, not an official government site. Eligibility is indicative. Always confirm on the official portal before applying.
-
 ## Problem statement
 
 Welfare schemes for farmers, students, workers, women and senior citizens go unclaimed because the information is scattered across many portals and written in complex language. People often do not know which schemes exist, whether they qualify, or what to do next.
