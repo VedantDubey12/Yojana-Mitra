@@ -2,8 +2,8 @@
 
 An AI-powered website that helps Indian citizens find central government schemes they may qualify for. Users enter their **age, income and occupation**, and the site lists matching schemes with the **benefit, documents required, step-by-step application instructions and the official link**. An integrated **AI chatbot** answers follow-up questions in English or Hindi.
 
-**Live website:** `<add your Vercel URL here>`
-**GitHub repository:** `<add your repo URL here>`
+**Live website:** `https://yojanamitra-three.vercel.app/`
+**GitHub repository:** ``
 
 > This is a student project, not an official government site. Eligibility is indicative. Always confirm on the official portal before applying.
 
