@@ -136,10 +136,14 @@ whether my eligibility rules and chatbot behaviour are good enough.
 ```
 Answer the questions the AI asks, then record what you learned and changed.
 
-**P6 – Response evaluation (tool 3 or 4).**
+**P6 – Response evaluation and fact-checking (GEMINI).**
 ```text
-Here is my scheme data (schemes.json). Check each scheme against its official source.
-List any criteria, amounts or links that look outdated or wrong, with a source URL for each.
+Technique:     Role-based prompting with structured output (table with source URLs) and response evaluation
+Prompt:        "Act as a fact-checker for Indian government welfare schemes..." followed by the full schemes.json
+Output problem found:  CHANGE: list what Gemini flagged, for example "Gemini flagged N schemes as outdated, such as ..." or "no errors found"
+Improved prompt:       CHANGE: if the first answer was vague, write the follow-up you used, for example "Give a source URL for each correction"
+Result after improvement: CHANGE: write what you fixed in schemes.json, for example "I verified 3 corrections on the official sites and updated the data"
+Evidence:      screenshots/gemini-prompt.png, screenshots/gemini-output.png
 ```
 Fix what it finds, and record the number of corrections.
 
