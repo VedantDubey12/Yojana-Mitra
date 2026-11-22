@@ -1,0 +1,348 @@
+{
+  "lastReviewed": "2026-11-22",
+  "disclaimer": "Indicative eligibility only. Criteria, amounts and deadlines change; always confirm on the official portal before applying.",
+  "schemes": [
+    {
+      "id": "pm-kisan",
+      "name": "PM-KISAN Samman Nidhi",
+      "category": "Agriculture",
+      "ministry": "Ministry of Agriculture & Farmers Welfare",
+      "benefit": "₹6,000 per year, paid in three instalments of ₹2,000 directly to your bank account.",
+      "description": "Income support for landholding farmer families.",
+      "rules": { "occupations": ["farmer"], "minAge": 18 },
+      "caveats": ["You must own cultivable land.", "Income-tax payers and some government employees are excluded."],
+      "documents": ["Aadhaar card", "Land ownership papers", "Bank passbook (Aadhaar-linked)", "Mobile number"],
+      "steps": [
+        "Go to pmkisan.gov.in and open 'Farmers Corner' > 'New Farmer Registration'.",
+        "Enter Aadhaar number, mobile number and state, then fill in land and bank details.",
+        "Complete e-KYC (OTP or at a Common Service Centre).",
+        "Your state officer verifies the land record; track status under 'Know Your Status'."
+      ],
+      "link": "https://pmkisan.gov.in"
+    },
+    {
+      "id": "pmfby",
+      "name": "PM Fasal Bima Yojana (Crop Insurance)",
+      "category": "Agriculture",
+      "ministry": "Ministry of Agriculture & Farmers Welfare",
+      "benefit": "Insurance cover for crop loss from drought, flood, pests and other natural causes at a low farmer premium (about 2% for kharif and 1.5% for rabi food crops).",
+      "description": "Protects farmers from financial loss when crops fail.",
+      "rules": { "occupations": ["farmer"], "minAge": 18 },
+      "caveats": ["Enrol before the cut-off date for each crop season."],
+      "documents": ["Aadhaar card", "Land records or tenancy agreement", "Bank passbook", "Sowing certificate"],
+      "steps": [
+        "Visit pmfby.gov.in or your bank, Common Service Centre or insurance agent before the season's cut-off date.",
+        "Choose your crop and area, and fill in the application with land details.",
+        "Pay the farmer share of the premium.",
+        "Report any crop loss within 72 hours through the Crop Insurance app or helpline 14447."
+      ],
+      "link": "https://pmfby.gov.in"
+    },
+    {
+      "id": "kcc",
+      "name": "Kisan Credit Card (KCC)",
+      "category": "Agriculture",
+      "ministry": "Ministry of Agriculture / NABARD",
+      "benefit": "Short-term farm credit at concessional interest, with interest subvention for timely repayment.",
+      "description": "Easy, low-interest credit for seeds, fertiliser and other farming costs.",
+      "rules": { "occupations": ["farmer"], "minAge": 18, "maxAge": 75 },
+      "caveats": ["Borrowers over 60 may need a co-borrower."],
+      "documents": ["Aadhaar card", "Land records", "Passport photo", "Bank account details"],
+      "steps": [
+        "Visit your nearest bank branch or Common Service Centre, or apply on the bank's KCC page.",
+        "Submit the KCC form with ID, address and land documents.",
+        "The bank assesses your credit limit based on your crop and land.",
+        "Receive the card and use it for withdrawals and farm purchases."
+      ],
+      "link": "https://www.myscheme.gov.in/schemes/kcc"
+    },
+    {
+      "id": "pmjay",
+      "name": "Ayushman Bharat PM-JAY (Health Cover)",
+      "category": "Health",
+      "ministry": "National Health Authority",
+      "benefit": "Free hospital treatment up to ₹5 lakh per family per year at empanelled hospitals. All citizens aged 70+ are covered regardless of income.",
+      "description": "Cashless secondary and tertiary hospital care for poor and vulnerable families and for senior citizens.",
+      "rules": { "anyOf": [ { "maxIncome": 250000 }, { "minAge": 70 } ] },
+      "caveats": ["For under-70s, eligibility is decided by SECC deprivation criteria and state lists, not income alone.", "Check your name at the official 'Am I Eligible' page."],
+      "documents": ["Aadhaar card", "Ration card or other family ID", "Mobile number"],
+      "steps": [
+        "Check eligibility at mera.pmjay.gov.in using your mobile number or ration card.",
+        "Download the Ayushman App or visit a Common Service Centre or empanelled hospital's Ayushman Mitra desk.",
+        "Complete e-KYC with Aadhaar and get your Ayushman card (70+ seniors can apply for the Vay Vandana card).",
+        "Show the card for cashless treatment at any empanelled hospital."
+      ],
+      "link": "https://pmjay.gov.in"
+    },
+    {
+      "id": "pmay",
+      "name": "Pradhan Mantri Awas Yojana (Housing)",
+      "category": "Housing",
+      "ministry": "Ministry of Housing & Urban Affairs / Ministry of Rural Development",
+      "benefit": "Financial assistance or an interest subsidy on home loans for building or buying a first pucca house.",
+      "description": "Support for economically weaker, low-income and middle-income households to own a home.",
+      "rules": { "maxIncome": 900000 },
+      "caveats": ["Your family must not own a pucca house anywhere in India.", "Income bands: EWS up to ₹3 lakh, LIG ₹3-6 lakh, MIG ₹6-9 lakh (urban, interest subsidy).", "Rural households use PMAY-Gramin with its own list."],
+      "documents": ["Aadhaar card", "Income proof or self-declaration", "Bank account details", "Proof of no pucca house", "Land or property documents (if building)"],
+      "steps": [
+        "Visit pmaymis.gov.in (urban) or pmayg.nic.in (rural) and select 'Apply for PMAY'.",
+        "Choose your category (EWS, LIG, MIG) and fill in family, income and Aadhaar details.",
+        "Submit the form, or apply via your Urban Local Body, Gram Panchayat or Common Service Centre.",
+        "Track your application status with the acknowledgement number."
+      ],
+      "link": "https://pmaymis.gov.in"
+    },
+    {
+      "id": "ujjwala",
+      "name": "PM Ujjwala Yojana (Free LPG Connection)",
+      "category": "Women & Child",
+      "ministry": "Ministry of Petroleum & Natural Gas",
+      "benefit": "A deposit-free LPG connection for women from poor households, with a subsidy on refills.",
+      "description": "Clean cooking fuel for women in low-income families.",
+      "rules": { "gender": "female", "minAge": 18, "maxIncome": 150000 },
+      "caveats": ["The household must be poor (BPL, ration card or SECC criteria) and have no existing LPG connection."],
+      "documents": ["Aadhaar card", "Ration card or BPL certificate", "Bank passbook", "Passport photo"],
+      "steps": [
+        "Download the KYC form from pmuy.gov.in or collect it from your local LPG distributor.",
+        "Fill in family details and attach ID and BPL proof.",
+        "Submit it to the nearest LPG distributor.",
+        "After verification, receive your connection and first cylinder."
+      ],
+      "link": "https://www.pmuy.gov.in"
+    },
+    {
+      "id": "apy",
+      "name": "Atal Pension Yojana (APY)",
+      "category": "Pension & Insurance",
+      "ministry": "PFRDA / Ministry of Finance",
+      "benefit": "A guaranteed monthly pension of ₹1,000 to ₹5,000 from age 60, depending on your monthly contribution.",
+      "description": "A retirement savings scheme built for people in the unorganised sector.",
+      "rules": { "minAge": 18, "maxAge": 40 },
+      "caveats": ["Income-tax payers cannot join.", "You need a savings bank account with auto-debit."],
+      "documents": ["Aadhaar card", "Savings bank account", "Mobile number"],
+      "steps": [
+        "Visit your bank or post office where you have a savings account.",
+        "Fill in the APY registration form with nominee details.",
+        "Choose the pension amount; the monthly contribution is set by your joining age.",
+        "Keep balance in your account for the auto-debit each month."
+      ],
+      "link": "https://www.npscra.nsdl.co.in/scheme-details.php"
+    },
+    {
+      "id": "pmjjby",
+      "name": "PM Jeevan Jyoti Bima Yojana (Life Insurance)",
+      "category": "Pension & Insurance",
+      "ministry": "Ministry of Finance",
+      "benefit": "₹2 lakh life insurance cover for ₹436 a year, auto-debited from your bank account.",
+      "description": "Low-cost term life cover for bank account holders.",
+      "rules": { "minAge": 18, "maxAge": 50 },
+      "caveats": ["Renewable each year until age 55.", "Premium amounts can be revised; check with your bank."],
+      "documents": ["Aadhaar card", "Savings bank account", "Nominee details"],
+      "steps": [
+        "Visit your bank branch, or use net banking or mobile banking.",
+        "Fill in the PMJJBY form and give an auto-debit consent.",
+        "Name a nominee.",
+        "The premium is debited every year around 31 May."
+      ],
+      "link": "https://jansuraksha.gov.in"
+    },
+    {
+      "id": "pmsby",
+      "name": "PM Suraksha Bima Yojana (Accident Insurance)",
+      "category": "Pension & Insurance",
+      "ministry": "Ministry of Finance",
+      "benefit": "₹2 lakh for accidental death or full disability and ₹1 lakh for partial disability, for ₹20 a year.",
+      "description": "Very low-cost accident insurance for bank account holders.",
+      "rules": { "minAge": 18, "maxAge": 70 },
+      "caveats": ["Renewable yearly; ₹20 premium may be revised."],
+      "documents": ["Aadhaar card", "Savings bank account", "Nominee details"],
+      "steps": [
+        "Visit your bank branch, or use net or mobile banking.",
+        "Submit the PMSBY enrolment form with auto-debit consent.",
+        "Add nominee details.",
+        "Premium is debited annually in May/June."
+      ],
+      "link": "https://jansuraksha.gov.in"
+    },
+    {
+      "id": "jandhan",
+      "name": "PM Jan Dhan Yojana (Zero-Balance Bank Account)",
+      "category": "Banking",
+      "ministry": "Department of Financial Services",
+      "benefit": "A zero-balance bank account with a RuPay debit card, built-in accident cover and overdraft facility.",
+      "description": "Gets every adult into the banking system.",
+      "rules": { "minAge": 10 },
+      "caveats": ["For people without any existing bank account (or who can convert an old account)."],
+      "documents": ["Aadhaar card or other officially valid ID", "Passport photo"],
+      "steps": [
+        "Visit any bank branch or Bank Mitra (Business Correspondent).",
+        "Fill the Jan Dhan account opening form and complete KYC.",
+        "Collect your RuPay debit card and passbook.",
+        "Link Aadhaar and mobile number to receive benefits directly."
+      ],
+      "link": "https://pmjdy.gov.in"
+    },
+    {
+      "id": "svanidhi",
+      "name": "PM SVANidhi (Street Vendor Loan)",
+      "category": "Business & Loans",
+      "ministry": "Ministry of Housing & Urban Affairs",
+      "benefit": "Collateral-free working-capital loans starting at ₹15,000, with higher limits on timely repayment, plus an interest subsidy and digital-payment cashback.",
+      "description": "Credit for street vendors to restart and grow their business.",
+      "rules": { "occupations": ["street_vendor"], "minAge": 18 },
+      "caveats": ["You need a Certificate of Vending or an ID/Letter of Recommendation from your Urban Local Body."],
+      "documents": ["Aadhaar card", "Vending certificate or ULB letter", "Bank account details", "Mobile number linked to Aadhaar"],
+      "steps": [
+        "Apply at pmsvanidhi.mohua.gov.in or visit a Common Service Centre or your Urban Local Body.",
+        "Enter your mobile number and submit vending details.",
+        "Your application is processed by a bank or lending institution.",
+        "Receive the loan and repay on time to unlock the next, larger loan."
+      ],
+      "link": "https://pmsvanidhi.mohua.gov.in"
+    },
+    {
+      "id": "mudra",
+      "name": "PM MUDRA Yojana (Business Loan)",
+      "category": "Business & Loans",
+      "ministry": "Ministry of Finance",
+      "benefit": "Collateral-free loans for small businesses: Shishu (up to ₹50,000), Kishor (up to ₹5 lakh), Tarun (up to ₹10 lakh) and Tarun Plus (up to ₹20 lakh).",
+      "description": "Funding for non-farm small and micro enterprises.",
+      "rules": { "occupations": ["small_business", "street_vendor", "artisan"], "minAge": 18 },
+      "caveats": ["The business must be non-farm (manufacturing, trading or services).", "Tarun Plus is for those who have repaid earlier loans."],
+      "documents": ["Aadhaar card", "PAN card", "Business proof or address proof", "Bank statements", "Project or business plan"],
+      "steps": [
+        "Prepare a short business plan and gather ID and address documents.",
+        "Apply at any bank, NBFC or microfinance institution, or at udyamimitra.in.",
+        "Choose the Shishu, Kishor or Tarun category based on the amount you need.",
+        "Loan is sanctioned after verification; you receive a MUDRA card."
+      ],
+      "link": "https://www.mudra.org.in"
+    },
+    {
+      "id": "standup",
+      "name": "Stand-Up India (Entrepreneur Loan)",
+      "category": "Business & Loans",
+      "ministry": "Department of Financial Services",
+      "benefit": "Bank loans of ₹10 lakh to ₹1 crore to set up a new enterprise.",
+      "description": "Loans for women and SC/ST entrepreneurs starting a first-time venture.",
+      "rules": { "occupations": ["small_business", "unemployed"], "minAge": 18, "anyOf": [ { "gender": "female" }, { "categories": ["SC", "ST"] } ] },
+      "caveats": ["For greenfield (new) enterprises in manufacturing, services, trading or agri-allied activities."],
+      "documents": ["Aadhaar card", "PAN card", "Caste certificate (SC/ST applicants)", "Project report", "Address and business proof"],
+      "steps": [
+        "Register at standupmitra.in and prepare a project report.",
+        "Apply online or through a bank branch, the Lead District Manager or SIDBI.",
+        "The bank evaluates the proposal and sanctions the loan.",
+        "Receive funds and start operations."
+      ],
+      "link": "https://www.standupmitra.in"
+    },
+    {
+      "id": "vishwakarma",
+      "name": "PM Vishwakarma (Artisans & Craftspeople)",
+      "category": "Business & Loans",
+      "ministry": "Ministry of MSME",
+      "benefit": "Free skill training with a daily stipend, a ₹15,000 toolkit incentive, and collateral-free loans of ₹1 lakh then ₹2 lakh at a concessional 5% interest.",
+      "description": "Support for traditional artisans such as carpenters, potters, tailors, blacksmiths and cobblers.",
+      "rules": { "occupations": ["artisan"], "minAge": 18 },
+      "caveats": ["You must work in one of the 18 listed traditional trades.", "Only one member per family can register."],
+      "documents": ["Aadhaar card", "Mobile number linked to Aadhaar", "Bank passbook", "Ration card"],
+      "steps": [
+        "Register at pmvishwakarma.gov.in through a Common Service Centre.",
+        "Complete biometric e-KYC.",
+        "Your Gram Panchayat or Urban Local Body and the district committee verify your application.",
+        "Receive a PM Vishwakarma certificate and ID card, then access training, toolkit and loans."
+      ],
+      "link": "https://pmvishwakarma.gov.in"
+    },
+    {
+      "id": "scholarship",
+      "name": "National Scholarship Portal Schemes",
+      "category": "Education",
+      "ministry": "Ministry of Education and other ministries",
+      "benefit": "Scholarships covering fees and maintenance allowance for students from low-income families, including SC, ST, OBC and minority categories.",
+      "description": "One portal for central and state scholarships.",
+      "rules": { "occupations": ["student"], "maxIncome": 450000 },
+      "caveats": ["The income limit differs by scholarship (often ₹1 lakh to ₹4.5 lakh).", "Marks, course and category conditions apply."],
+      "documents": ["Aadhaar card", "Income certificate", "Caste certificate (if applicable)", "Previous year's marksheet", "Bank passbook", "Admission/fee receipt"],
+      "steps": [
+        "Register on scholarships.gov.in (One Time Registration) and note your OTR ID.",
+        "Log in, choose the scholarships you qualify for, and fill in the application.",
+        "Upload your documents and submit before the deadline.",
+        "Your institute and nodal officer verify the form; money is credited to your bank account."
+      ],
+      "link": "https://scholarships.gov.in"
+    },
+    {
+      "id": "skill-india",
+      "name": "Skill India / PMKVY (Free Skill Training)",
+      "category": "Education",
+      "ministry": "Ministry of Skill Development & Entrepreneurship",
+      "benefit": "Free short-term skill training with a certificate and placement support in hundreds of job roles.",
+      "description": "Industry-relevant training for students, dropouts and unemployed youth.",
+      "rules": { "occupations": ["student", "unemployed"], "minAge": 15, "maxAge": 45 },
+      "caveats": ["Course availability depends on your district's training centres and current scheme phase."],
+      "documents": ["Aadhaar card", "Education certificates", "Bank account details", "Passport photo"],
+      "steps": [
+        "Create a profile on skillindiadigital.gov.in.",
+        "Search for a course and training centre near you.",
+        "Enrol and complete the training and assessment.",
+        "Receive a certificate and attend placement support."
+      ],
+      "link": "https://www.skillindiadigital.gov.in"
+    },
+    {
+      "id": "eshram",
+      "name": "e-Shram Card (Unorganised Workers)",
+      "category": "Pension & Insurance",
+      "ministry": "Ministry of Labour & Employment",
+      "benefit": "A national registration ID for unorganised workers with ₹2 lakh accidental insurance cover and access to other welfare schemes.",
+      "description": "A database and benefits gateway for gig, domestic, construction and other informal workers.",
+      "rules": { "occupations": ["unorganised_worker", "street_vendor", "artisan"], "minAge": 16, "maxAge": 59 },
+      "caveats": ["You must not be an EPFO/ESIC member or an income-tax payer."],
+      "documents": ["Aadhaar card", "Mobile number linked to Aadhaar", "Bank account details"],
+      "steps": [
+        "Visit eshram.gov.in and click 'Register on e-Shram'.",
+        "Enter your Aadhaar-linked mobile number and complete OTP verification.",
+        "Fill in occupation, education and bank details.",
+        "Download your UAN card; you can also register at a Common Service Centre."
+      ],
+      "link": "https://eshram.gov.in"
+    },
+    {
+      "id": "pmsym",
+      "name": "PM Shram Yogi Maandhan (Pension for Workers)",
+      "category": "Pension & Insurance",
+      "ministry": "Ministry of Labour & Employment",
+      "benefit": "A guaranteed monthly pension of ₹3,000 after age 60, with a small monthly contribution matched by the government.",
+      "description": "Old-age security for informal-sector workers with low income.",
+      "rules": { "occupations": ["unorganised_worker", "street_vendor", "artisan"], "minAge": 18, "maxAge": 40, "maxIncome": 180000 },
+      "caveats": ["Monthly income must be ₹15,000 or less.", "You must not be a member of EPFO, ESIC or NPS."],
+      "documents": ["Aadhaar card", "Savings bank account or Jan Dhan account", "Mobile number"],
+      "steps": [
+        "Visit your nearest Common Service Centre with your Aadhaar and bank passbook.",
+        "Self-certify your income and complete Aadhaar-based registration.",
+        "Pay the first contribution in cash; you receive a Shram Yogi pension account number.",
+        "Contributions are auto-debited from your bank account each month."
+      ],
+      "link": "https://maandhan.in"
+    },
+    {
+      "id": "ignoaps",
+      "name": "Indira Gandhi National Old Age Pension (NSAP)",
+      "category": "Pension & Insurance",
+      "ministry": "Ministry of Rural Development",
+      "benefit": "A monthly old-age pension for poor senior citizens. The central share starts at ₹200 (₹500 at 80+); state governments add to it.",
+      "description": "Basic income support for elderly people below the poverty line.",
+      "rules": { "minAge": 60, "maxIncome": 120000 },
+      "caveats": ["You must belong to a BPL household.", "Pension amount varies by state."],
+      "documents": ["Aadhaar card", "Age proof", "BPL card or income certificate", "Bank passbook", "Passport photo"],
+      "steps": [
+        "Collect the application form from your Gram Panchayat, block office or municipal office (or your state's social-justice portal).",
+        "Attach age, BPL and identity proofs.",
+        "Submit to the local authority; it is verified at block or district level.",
+        "Once sanctioned, the pension is credited monthly to your bank account."
+      ],
+      "link": "https://nsap.nic.in"
+    }
+  ]
+}

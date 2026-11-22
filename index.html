@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yojana Mitra – Government Schemes Finder</title>
+  <meta name="description" content="Enter your age, income and occupation to find Indian government schemes you may qualify for, with documents and step-by-step application help." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="#top" aria-label="Yojana Mitra home">
+        <span class="brand-mark" aria-hidden="true">योजना</span>
+        <span class="brand-name">Yojana Mitra</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#finder">Find schemes</a>
+        <a href="#how">How it works</a>
+        <button class="nav-chat" id="openChatNav" type="button">Ask the assistant</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">Government schemes, made simple</p>
+        <h1>Find the benefits <em>you already deserve</em>.</h1>
+        <p class="lede">Crores of rupees in schemes go unclaimed because the information is scattered and hard to follow. Tell us three things about yourself and see which central government schemes you may qualify for, with the documents you need and how to apply.</p>
+        <ul class="stats" aria-label="Quick facts">
+          <li><strong id="schemeCount">19</strong><span>schemes covered</span></li>
+          <li><strong>3</strong><span>questions to start</span></li>
+          <li><strong>0</strong><span>data stored about you</span></li>
+        </ul>
+      </div>
+
+      <form class="card form" id="finder" novalidate aria-labelledby="formTitle">
+        <h2 id="formTitle">Check your eligibility</h2>
+
+        <div class="field">
+          <label for="age">Your age</label>
+          <input id="age" name="age" type="number" inputmode="numeric" min="1" max="120" placeholder="e.g. 34" required />
+        </div>
+
+        <div class="field">
+          <label for="income">Annual family income (₹)</label>
+          <input id="income" name="income" type="number" inputmode="numeric" min="0" step="1000" placeholder="e.g. 150000" required />
+          <small>Total yearly income of your household. Enter 0 if none.</small>
+        </div>
+
+        <div class="field">
+          <label for="occupation">Occupation</label>
+          <select id="occupation" name="occupation" required>
+            <option value="">Select one…</option>
+            <option value="farmer">Farmer</option>
+            <option value="student">Student</option>
+            <option value="street_vendor">Street vendor / hawker</option>
+            <option value="small_business">Small business owner / self-employed</option>
+            <option value="artisan">Artisan / craftsperson (carpenter, potter, tailor…)</option>
+            <option value="unorganised_worker">Daily-wage / informal worker</option>
+            <option value="salaried">Salaried employee</option>
+            <option value="unemployed">Unemployed / job seeker</option>
+            <option value="homemaker">Homemaker</option>
+            <option value="retired">Retired / senior citizen</option>
+          </select>
+        </div>
+
+        <div class="row2">
+          <div class="field">
+            <label for="gender">Gender <span class="opt">(optional)</span></label>
+            <select id="gender" name="gender">
+              <option value="">Prefer not to say</option>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="category">Category <span class="opt">(optional)</span></label>
+            <select id="category" name="category">
+              <option value="">Prefer not to say</option>
+              <option value="General">General</option>
+              <option value="OBC">OBC</option>
+              <option value="SC">SC</option>
+              <option value="ST">ST</option>
+              <option value="Minority">Minority</option>
+            </select>
+          </div>
+        </div>
+
+        <p class="form-error" id="formError" role="alert" hidden></p>
+        <button class="btn" type="submit">Show my schemes</button>
+        <p class="privacy">Your answers stay in your browser. Nothing is saved on a server.</p>
+      </form>
+    </section>
+
+    <section class="results wrap" id="results" aria-live="polite" hidden>
+      <div class="results-head">
+        <div>
+          <h2 id="resultsTitle">Schemes you may qualify for</h2>
+          <p id="resultsSub" class="muted"></p>
+        </div>
+        <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+      </div>
+      <div class="grid" id="grid"></div>
+      <p class="notice" id="notice"></p>
+    </section>
+
+    <section class="how wrap" id="how">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li><span>1</span><div><h3>Tell us about you</h3><p>Age, family income and occupation. Gender and category are optional and only used where a scheme needs them.</p></div></li>
+        <li><span>2</span><div><h3>See your matches</h3><p>Rules for each scheme are checked instantly, and matching schemes are listed with their benefit.</p></div></li>
+        <li><span>3</span><div><h3>Apply with confidence</h3><p>Open any scheme for required documents, application steps and the official website.</p></div></li>
+        <li><span>4</span><div><h3>Ask the AI assistant</h3><p>Not sure about something? Ask Yojana Mitra in plain English or Hindi.</p></div></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Yojana Mitra is a student project and is <strong>not</strong> an official government website. Eligibility shown is indicative. Always confirm on the official portal or at your nearest Common Service Centre before applying.</p>
+      <p class="muted" id="reviewed"></p>
+    </div>
+  </footer>
+
+  <!-- AI chatbot -->
+  <button class="chat-fab" id="chatFab" type="button" aria-haspopup="dialog" aria-controls="chatPanel" aria-expanded="false">
+    <span aria-hidden="true">💬</span> Ask Yojana Mitra
+  </button>
+
+  <section class="chat" id="chatPanel" role="dialog" aria-label="Yojana Mitra AI assistant" hidden>
+    <header class="chat-head">
+      <div>
+        <strong>Yojana Mitra</strong>
+        <span class="chat-sub">AI guide to government schemes</span>
+      </div>
+      <button class="chat-close" id="chatClose" type="button" aria-label="Close chat">×</button>
+    </header>
+    <div class="chat-log" id="chatLog" aria-live="polite"></div>
+    <div class="chat-suggest" id="chatSuggest"></div>
+    <form class="chat-form" id="chatForm" autocomplete="off">
+      <label for="chatInput" class="sr">Your question</label>
+      <input id="chatInput" type="text" maxlength="500" placeholder="Ask about a scheme…" />
+      <button type="submit" id="chatSend">Send</button>
+    </form>
+    <p class="chat-foot">AI answers can be wrong. Confirm on the official site.</p>
+  </section>
+
+  <script src="assets/eligibility.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "yojana-mitra",
+  "version": "1.0.0",
+  "description": "AI-powered government schemes finder with an eligibility checker and chatbot.",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "test": "node tests/run-tests.js"
+  },
+  "engines": { "node": ">=18" }
+}
