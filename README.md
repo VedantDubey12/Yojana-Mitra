@@ -47,10 +47,9 @@ Fill in with your real usage (see `docs/PROMPT_LOG.md`):
 
 | Tool | Contribution |
 |---|---|
-| `<Tool 1>` | `<e.g. generated the first version from the five-part prompt>` |
-| `<Tool 2>` | `<e.g. refined UI, wrote the chatbot API, fixed bugs>` |
-| `<Tool 3>` | `<e.g. researched schemes, wrote the chatbot system prompt>` |
-
+| Bolt.new | Generated the first draft of the website from my five-part prompt (Role, Task, Context, Constraints, Output Format) |
+| Claude | Refined the website, wrote the chatbot serverless API (api/chat.js), moved scheme rules into data/schemes.json, wrote unit tests, helped fix the model-name and timeout errors, and guided GitHub and Vercel deployment |
+| Gemini | Fact-checked the scheme data (benefits, eligibility rules, links) against official sources and flagged outdated details for correction |
 ## Project structure
 
 ```
