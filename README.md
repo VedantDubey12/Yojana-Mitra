@@ -99,7 +99,7 @@ Replace these with screenshots of your live site:
 
 | Home | Results | Chatbot |
 |---|---|---|
-| `docs/screenshots/home.png` | `docs/screenshots/results.png` | `docs/screenshots/chat.png` |
+| `docs/screenshots/Screenshot 2026-11-22 134851.png` | `docs/screenshots/Screenshot 2026-11-22 134830.png` | `docs/screenshots/Screenshot 2026-11-22 134620.png` |
 
 ## Testing
 
