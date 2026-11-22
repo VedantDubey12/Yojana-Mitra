@@ -72,7 +72,7 @@ Fill in during development. Delete rows for tools you did not use.
 
 | # | Tool | Tasks performed | Why this tool | Evidence (screenshot/file) |
 |---|---|---|---|---|
-| 1 | [TOOL] | Generated the first draft of the website from my five-part prompt (Part A) | Fast first draft from a single structured prompt | screenshots/prompt1-input.png, screenshots/prompt1-output.png, screenshots/prompt1-tool.png |
+| 1 | bolt.new | Generated the first draft of the website from my five-part prompt (Part A) | Fast first draft from a single structured prompt | screenshots/prompt1-input.png, screenshots/prompt1-output.png, screenshots/prompt1-tool.png |
 | 2 | Claude / Cursor | Refined UI, wrote `api/chat.js`, fixed bugs, wrote tests | Strong at code reasoning and refactoring | |
 | 3 | ChatGPT / Gemini | Researched scheme eligibility, wrote the chatbot system prompt, drafted README | Good for research and drafting text | |
 | 4 | Perplexity (optional) | Verified scheme details with sources | Cited sources | |
@@ -86,15 +86,21 @@ Copy this block for every meaningful prompt. Aim for at least 6 records covering
 ### Template
 
 ```text
-ID:            P#
-Tool:
-Technique:     (role / chain / context / structured / refinement / constraints / reverse prompting)
-Prompt:        <paste exactly>
-Output problem found:  <what was wrong or missing>
-Improved prompt:       <paste exactly>
-Result after improvement: <what got better; quality, accuracy or usefulness>
-Evidence:      screenshots/pX-before.png, screenshots/pX-after.png
-```
+
+
+### P1 – Initial five-part prompt ([TOOL])
+
+Technique:     Structured prompting (Role, Task, Context, Constraints, Output Format)
+Prompt:        Full five-part prompt from Part A above, pasted unchanged as the first message
+Output problem found: 1. The AI service had a problem. Please try again.
+                      2. The Ai took too long to respond. Please try again.
+CHANGE:1. The likely cause was the retiring default model, gemini-2.5-flash. The code returns this message when Google rejects the request, and the key was fine.
+       2.The cause was a model that was too slow, and the request passed the code's 20-second limit.
+The fix was Flash-Lite models first, a 12-second wait per model, a 25-second total limit, and fallback on timeout.
+The fix was api/chat.js with model fallbacks and the real error code.
+Improved prompt:       Follow-up refinement prompts P2 to P7 (see below)
+Result after improvement: CHANGE: write what got better, for example: a real Gemini API chatbot with input validation and error handling, rules moved to schemes.json, 19 schemes, tests, and deployment on Vercel.
+Evidence:      screenshots/prompt1-input.png, screenshots/prompt1-output.png
 
 ### Suggested refinement prompts (use them, then record the real before/after)
 
