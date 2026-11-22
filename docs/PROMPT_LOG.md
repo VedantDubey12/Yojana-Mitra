@@ -72,7 +72,7 @@ Fill in during development. Delete rows for tools you did not use.
 
 | # | Tool | Tasks performed | Why this tool | Evidence (screenshot/file) |
 |---|---|---|---|---|
-| 1 | Bolt.new / Lovable | Generated the first working version from the Part A prompt | Fast full-site generation | `screenshots/prompt1-output.png` |
+| 1 | [TOOL] | Generated the first draft of the website from my five-part prompt (Part A) | Fast first draft from a single structured prompt | screenshots/prompt1-input.png, screenshots/prompt1-output.png, screenshots/prompt1-tool.png |
 | 2 | Claude / Cursor | Refined UI, wrote `api/chat.js`, fixed bugs, wrote tests | Strong at code reasoning and refactoring | |
 | 3 | ChatGPT / Gemini | Researched scheme eligibility, wrote the chatbot system prompt, drafted README | Good for research and drafting text | |
 | 4 | Perplexity (optional) | Verified scheme details with sources | Cited sources | |
