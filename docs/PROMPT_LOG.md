@@ -150,10 +150,8 @@ why it happened.
 
 | # | Error / challenge | How it appeared | Cause | Fix | Prompt that helped |
 |---|---|---|---|---|---|
-| 1 | Example: chatbot returns "not configured" on Vercel | Red error in chat | `GEMINI_API_KEY` missing or not redeployed | Added env var and redeployed | P7 |
-| 2 | | | | | |
-| 3 | | | | | |
-
+| 1 | Chatbot failed with "The AI service had a problem" | Red error in the chat box after sending a question on the live Vercel site | The default model name `gemini-2.5-flash` is being phased out and was likely unavailable for a new API key (the key itself was fine, since a missing key shows a different message) | Updated api/chat.js to try a list of current models in order (gemini-3.5-flash-lite, gemini-3.1-flash-lite, gemini-3.8-flash, gemini-3.6-flash, gemini-2.5-flash) and move to the next if one is unavailable; the chat now shows the real error code and logs details in Vercel | P7 (debugging prompt with screenshot of the error and deployment context) |
+| 2 | Chatbot failed with "The AI took too long to respond" | Red timeout message after the first fix | Newer Flash models take longer to think and the request exceeded the 20-second limit | Put the faster Flash-Lite models first, added a 12-second wait per model with a 25-second total limit, and fall back to the next model on timeout; set GEMINI_MODEL to a lite model in Vercel as a quick test | P7 (screenshot of the new error and a request for a fix) |
 ---
 
 ## Part E – Prompt techniques checklist
